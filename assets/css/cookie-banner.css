@@ -1,0 +1,70 @@
+/**
+ * Cookie Banner Stylesheet
+ */
+body.has-cookie-banner {}
+
+#cookie-consent-block {
+	position: absolute;
+	height: auto;
+	top: 0;
+	z-index: 99999;
+	background: #282b2d;
+	color: #ccc;
+	text-align: center;
+	width: 100%;
+	padding: 1.4rem 0;
+	font-size: 0.9rem;
+	line-height: 1.4;
+}
+
+	#cookie-consent-block p {
+		max-width: 1000px;
+		margin: 0 auto 0 auto;
+		text-align: left;
+		overflow: hidden;
+		position: relative;
+	}
+
+		#cookie-consent-block p span {
+			display: block;
+			font-weight: bold;
+			font-size: 1rem;
+			color: #eee;
+		}
+
+	.close-cookie-block {
+		position: absolute;
+		right: 2rem;
+		top: 0;
+		background: #474D50;
+		border-radius: 4px;
+		padding: 0.8rem 1.3rem;
+		display: inline-block;
+		text-decoration: none;
+		color: white;
+		font-weight: bold;
+		line-height: 1;
+	}
+
+		.close-cookie-block:hover {
+			background: white;
+			color: black;
+		}
+
+@media screen and (max-width: 1024px) {
+
+	#cookie-consent-block p {
+		text-align: center;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.close-cookie-block {
+		display: block;
+		position: relative;
+		margin-top: 1rem;
+		right: 0;
+		width: 90%;
+	}
+
+}
